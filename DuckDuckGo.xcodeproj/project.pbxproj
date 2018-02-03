@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D98B2AA20253CD8005BCE46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98B2A920253CD8005BCE46 /* AppDelegate.m */; };
+		3D98B2B020253CD8005BCE46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D98B2AE20253CD8005BCE46 /* Main.storyboard */; };
+		3D98B2B220253CD8005BCE46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D98B2B120253CD8005BCE46 /* Assets.xcassets */; };
+		3D98B2B520253CD8005BCE46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D98B2B320253CD8005BCE46 /* LaunchScreen.storyboard */; };
+		3D98B2B820253CD8005BCE46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98B2B720253CD8005BCE46 /* main.m */; };
+		3D98B2C220253CD8005BCE46 /* DuckDuckGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98B2C120253CD8005BCE46 /* DuckDuckGoTests.m */; };
+		3D98B2D220253DCC005BCE46 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98B2D020253DCC005BCE46 /* HomePageViewController.m */; };
+		3D98B2D320253DCC005BCE46 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D98B2D120253DCC005BCE46 /* HomePageViewController.xib */; };
+		3DFA92A6202543FF00675CA1 /* SearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA92A4202543FF00675CA1 /* SearchResultTableViewCell.m */; };
+		3DFA92A7202543FF00675CA1 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA92A5202543FF00675CA1 /* SearchResultTableViewCell.xib */; };
+		3DFA92AB202547DC00675CA1 /* DuckDuckGoApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA92AA202547DC00675CA1 /* DuckDuckGoApi.m */; };
+		3DFA92AF20254D0D00675CA1 /* HomePageDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA92AE20254D0D00675CA1 /* HomePageDataProvider.m */; };
+		3DFA92B32025520400675CA1 /* DDGSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA92B22025520400675CA1 /* DDGSearchResponse.m */; };
+		3DFA92B62025562E00675CA1 /* DDGRelatedTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA92B52025562E00675CA1 /* DDGRelatedTopic.m */; };
+		3DFA92B9202556D500675CA1 /* DDGIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA92B8202556D500675CA1 /* DDGIcon.m */; };
+		3DFA92C4202565FF00675CA1 /* NSValueTransformer+DDGAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA92C3202565FF00675CA1 /* NSValueTransformer+DDGAPI.m */; };
+		79F64E1961740D9E1ECE374C /* libPods-DuckDuckGoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA704392EDB6F2266C01BCAE /* libPods-DuckDuckGoTests.a */; };
+		DFF050ACDA14A604070B0665 /* libPods-DuckDuckGo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E14B55D4BD501AA0F72381 /* libPods-DuckDuckGo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D98B2BE20253CD8005BCE46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D98B29D20253CD8005BCE46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D98B2A420253CD8005BCE46;
+			remoteInfo = DuckDuckGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33994C0872ED59413F65C7EB /* Pods-DuckDuckGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDuckGoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDuckGoTests/Pods-DuckDuckGoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D98B2A520253CD8005BCE46 /* DuckDuckGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckDuckGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D98B2A820253CD8005BCE46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D98B2A920253CD8005BCE46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D98B2AF20253CD8005BCE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D98B2B120253CD8005BCE46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D98B2B420253CD8005BCE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D98B2B620253CD8005BCE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D98B2B720253CD8005BCE46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D98B2BD20253CD8005BCE46 /* DuckDuckGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuckDuckGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D98B2C120253CD8005BCE46 /* DuckDuckGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuckDuckGoTests.m; sourceTree = "<group>"; };
+		3D98B2C320253CD9005BCE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D98B2CF20253DCC005BCE46 /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		3D98B2D020253DCC005BCE46 /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		3D98B2D120253DCC005BCE46 /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		3DFA92A3202543FF00675CA1 /* SearchResultTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultTableViewCell.h; sourceTree = "<group>"; };
+		3DFA92A4202543FF00675CA1 /* SearchResultTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultTableViewCell.m; sourceTree = "<group>"; };
+		3DFA92A5202543FF00675CA1 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
+		3DFA92A9202547DC00675CA1 /* DuckDuckGoApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuckDuckGoApi.h; sourceTree = "<group>"; };
+		3DFA92AA202547DC00675CA1 /* DuckDuckGoApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuckDuckGoApi.m; sourceTree = "<group>"; };
+		3DFA92AD20254D0D00675CA1 /* HomePageDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageDataProvider.h; sourceTree = "<group>"; };
+		3DFA92AE20254D0D00675CA1 /* HomePageDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageDataProvider.m; sourceTree = "<group>"; };
+		3DFA92B12025520400675CA1 /* DDGSearchResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGSearchResponse.h; sourceTree = "<group>"; };
+		3DFA92B22025520400675CA1 /* DDGSearchResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGSearchResponse.m; sourceTree = "<group>"; };
+		3DFA92B42025562E00675CA1 /* DDGRelatedTopic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGRelatedTopic.h; sourceTree = "<group>"; };
+		3DFA92B52025562E00675CA1 /* DDGRelatedTopic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGRelatedTopic.m; sourceTree = "<group>"; };
+		3DFA92B7202556D500675CA1 /* DDGIcon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDGIcon.h; sourceTree = "<group>"; };
+		3DFA92B8202556D500675CA1 /* DDGIcon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDGIcon.m; sourceTree = "<group>"; };
+		3DFA92C2202565FF00675CA1 /* NSValueTransformer+DDGAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+DDGAPI.h"; sourceTree = "<group>"; };
+		3DFA92C3202565FF00675CA1 /* NSValueTransformer+DDGAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+DDGAPI.m"; sourceTree = "<group>"; };
+		69E14B55D4BD501AA0F72381 /* libPods-DuckDuckGo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DuckDuckGo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70656701C3870561DB9EAA23 /* Pods-DuckDuckGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDuckGoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDuckGoTests/Pods-DuckDuckGoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A142D39205045F911A4DDD4A /* Pods-DuckDuckGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDuckGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDuckGo/Pods-DuckDuckGo.debug.xcconfig"; sourceTree = "<group>"; };
+		DD59F52CEC33278466B0E3BA /* Pods-DuckDuckGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDuckGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDuckGo/Pods-DuckDuckGo.release.xcconfig"; sourceTree = "<group>"; };
+		FA704392EDB6F2266C01BCAE /* libPods-DuckDuckGoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DuckDuckGoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D98B2A220253CD8005BCE46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF050ACDA14A604070B0665 /* libPods-DuckDuckGo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D98B2BA20253CD8005BCE46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79F64E1961740D9E1ECE374C /* libPods-DuckDuckGoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27195975B8E8852C1A7942CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A142D39205045F911A4DDD4A /* Pods-DuckDuckGo.debug.xcconfig */,
+				DD59F52CEC33278466B0E3BA /* Pods-DuckDuckGo.release.xcconfig */,
+				33994C0872ED59413F65C7EB /* Pods-DuckDuckGoTests.debug.xcconfig */,
+				70656701C3870561DB9EAA23 /* Pods-DuckDuckGoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3D98B29C20253CD8005BCE46 = {
+			isa = PBXGroup;
+			children = (
+				3D98B2A720253CD8005BCE46 /* DuckDuckGo */,
+				3D98B2C020253CD8005BCE46 /* DuckDuckGoTests */,
+				3D98B2A620253CD8005BCE46 /* Products */,
+				27195975B8E8852C1A7942CF /* Pods */,
+				6918178D2AB38BB70BCE7F96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D98B2A620253CD8005BCE46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D98B2A520253CD8005BCE46 /* DuckDuckGo.app */,
+				3D98B2BD20253CD8005BCE46 /* DuckDuckGoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D98B2A720253CD8005BCE46 /* DuckDuckGo */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA92BA2025656700675CA1 /* Categories */,
+				3D98B2CE20253D9C005BCE46 /* Resources */,
+				3D98B2CD20253CEA005BCE46 /* API */,
+				3D98B2CC20253CE2005BCE46 /* UI */,
+				3D98B2A820253CD8005BCE46 /* AppDelegate.h */,
+				3D98B2A920253CD8005BCE46 /* AppDelegate.m */,
+				3D98B2B620253CD8005BCE46 /* Info.plist */,
+			);
+			path = DuckDuckGo;
+			sourceTree = "<group>";
+		};
+		3D98B2C020253CD8005BCE46 /* DuckDuckGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D98B2C120253CD8005BCE46 /* DuckDuckGoTests.m */,
+				3D98B2C320253CD9005BCE46 /* Info.plist */,
+			);
+			path = DuckDuckGoTests;
+			sourceTree = "<group>";
+		};
+		3D98B2CC20253CE2005BCE46 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA92A12025434A00675CA1 /* HomePage */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3D98B2CD20253CEA005BCE46 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA92B0202551E100675CA1 /* Model */,
+				3DFA92A9202547DC00675CA1 /* DuckDuckGoApi.h */,
+				3DFA92AA202547DC00675CA1 /* DuckDuckGoApi.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3D98B2CE20253D9C005BCE46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D98B2B720253CD8005BCE46 /* main.m */,
+				3D98B2AE20253CD8005BCE46 /* Main.storyboard */,
+				3D98B2B120253CD8005BCE46 /* Assets.xcassets */,
+				3D98B2B320253CD8005BCE46 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DFA92A12025434A00675CA1 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA92AC20254CFD00675CA1 /* DataProvider */,
+				3DFA92A2202543E000675CA1 /* Views */,
+				3D98B2CF20253DCC005BCE46 /* HomePageViewController.h */,
+				3D98B2D020253DCC005BCE46 /* HomePageViewController.m */,
+				3D98B2D120253DCC005BCE46 /* HomePageViewController.xib */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		3DFA92A2202543E000675CA1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA92A3202543FF00675CA1 /* SearchResultTableViewCell.h */,
+				3DFA92A4202543FF00675CA1 /* SearchResultTableViewCell.m */,
+				3DFA92A5202543FF00675CA1 /* SearchResultTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DFA92AC20254CFD00675CA1 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA92AD20254D0D00675CA1 /* HomePageDataProvider.h */,
+				3DFA92AE20254D0D00675CA1 /* HomePageDataProvider.m */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		3DFA92B0202551E100675CA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA92B12025520400675CA1 /* DDGSearchResponse.h */,
+				3DFA92B22025520400675CA1 /* DDGSearchResponse.m */,
+				3DFA92B42025562E00675CA1 /* DDGRelatedTopic.h */,
+				3DFA92B52025562E00675CA1 /* DDGRelatedTopic.m */,
+				3DFA92B7202556D500675CA1 /* DDGIcon.h */,
+				3DFA92B8202556D500675CA1 /* DDGIcon.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DFA92BA2025656700675CA1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA92BB2025656C00675CA1 /* Transformer */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3DFA92BB2025656C00675CA1 /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA92C2202565FF00675CA1 /* NSValueTransformer+DDGAPI.h */,
+				3DFA92C3202565FF00675CA1 /* NSValueTransformer+DDGAPI.m */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		6918178D2AB38BB70BCE7F96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69E14B55D4BD501AA0F72381 /* libPods-DuckDuckGo.a */,
+				FA704392EDB6F2266C01BCAE /* libPods-DuckDuckGoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D98B2A420253CD8005BCE46 /* DuckDuckGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D98B2C620253CD9005BCE46 /* Build configuration list for PBXNativeTarget "DuckDuckGo" */;
+			buildPhases = (
+				BB5F4AD0061722F59A7E4990 /* [CP] Check Pods Manifest.lock */,
+				3D98B2A120253CD8005BCE46 /* Sources */,
+				3D98B2A220253CD8005BCE46 /* Frameworks */,
+				3D98B2A320253CD8005BCE46 /* Resources */,
+				D7C228A1A80E62352F09DF08 /* [CP] Embed Pods Frameworks */,
+				0B634E7ED4818351218DCFEE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuckDuckGo;
+			productName = DuckDuckGo;
+			productReference = 3D98B2A520253CD8005BCE46 /* DuckDuckGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D98B2BC20253CD8005BCE46 /* DuckDuckGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D98B2C920253CD9005BCE46 /* Build configuration list for PBXNativeTarget "DuckDuckGoTests" */;
+			buildPhases = (
+				A720E51DF2E20C58677FE272 /* [CP] Check Pods Manifest.lock */,
+				3D98B2B920253CD8005BCE46 /* Sources */,
+				3D98B2BA20253CD8005BCE46 /* Frameworks */,
+				3D98B2BB20253CD8005BCE46 /* Resources */,
+				3AD46FE228B9A0B98263865C /* [CP] Embed Pods Frameworks */,
+				D6FE00CF0729D274794717B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D98B2BF20253CD8005BCE46 /* PBXTargetDependency */,
+			);
+			name = DuckDuckGoTests;
+			productName = DuckDuckGoTests;
+			productReference = 3D98B2BD20253CD8005BCE46 /* DuckDuckGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D98B29D20253CD8005BCE46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jiaqi Yan";
+				TargetAttributes = {
+					3D98B2A420253CD8005BCE46 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					3D98B2BC20253CD8005BCE46 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D98B2A420253CD8005BCE46;
+					};
+				};
+			};
+			buildConfigurationList = 3D98B2A020253CD8005BCE46 /* Build configuration list for PBXProject "DuckDuckGo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D98B29C20253CD8005BCE46;
+			productRefGroup = 3D98B2A620253CD8005BCE46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D98B2A420253CD8005BCE46 /* DuckDuckGo */,
+				3D98B2BC20253CD8005BCE46 /* DuckDuckGoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D98B2A320253CD8005BCE46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D98B2D320253DCC005BCE46 /* HomePageViewController.xib in Resources */,
+				3DFA92A7202543FF00675CA1 /* SearchResultTableViewCell.xib in Resources */,
+				3D98B2B520253CD8005BCE46 /* LaunchScreen.storyboard in Resources */,
+				3D98B2B220253CD8005BCE46 /* Assets.xcassets in Resources */,
+				3D98B2B020253CD8005BCE46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D98B2BB20253CD8005BCE46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B634E7ED4818351218DCFEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDuckGo/Pods-DuckDuckGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AD46FE228B9A0B98263865C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDuckGoTests/Pods-DuckDuckGoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A720E51DF2E20C58677FE272 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DuckDuckGoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB5F4AD0061722F59A7E4990 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DuckDuckGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6FE00CF0729D274794717B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDuckGoTests/Pods-DuckDuckGoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C228A1A80E62352F09DF08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDuckGo/Pods-DuckDuckGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D98B2A120253CD8005BCE46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DFA92AB202547DC00675CA1 /* DuckDuckGoApi.m in Sources */,
+				3D98B2B820253CD8005BCE46 /* main.m in Sources */,
+				3D98B2AA20253CD8005BCE46 /* AppDelegate.m in Sources */,
+				3DFA92B9202556D500675CA1 /* DDGIcon.m in Sources */,
+				3DFA92A6202543FF00675CA1 /* SearchResultTableViewCell.m in Sources */,
+				3DFA92C4202565FF00675CA1 /* NSValueTransformer+DDGAPI.m in Sources */,
+				3DFA92B32025520400675CA1 /* DDGSearchResponse.m in Sources */,
+				3DFA92AF20254D0D00675CA1 /* HomePageDataProvider.m in Sources */,
+				3D98B2D220253DCC005BCE46 /* HomePageViewController.m in Sources */,
+				3DFA92B62025562E00675CA1 /* DDGRelatedTopic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D98B2B920253CD8005BCE46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D98B2C220253CD8005BCE46 /* DuckDuckGoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D98B2BF20253CD8005BCE46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D98B2A420253CD8005BCE46 /* DuckDuckGo */;
+			targetProxy = 3D98B2BE20253CD8005BCE46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D98B2AE20253CD8005BCE46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D98B2AF20253CD8005BCE46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D98B2B320253CD8005BCE46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D98B2B420253CD8005BCE46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D98B2C420253CD9005BCE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D98B2C520253CD9005BCE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D98B2C720253CD9005BCE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A142D39205045F911A4DDD4A /* Pods-DuckDuckGo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8H2JAT7DH;
+				INFOPLIST_FILE = DuckDuckGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyan.DuckDuckGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D98B2C820253CD9005BCE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD59F52CEC33278466B0E3BA /* Pods-DuckDuckGo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8H2JAT7DH;
+				INFOPLIST_FILE = DuckDuckGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyan.DuckDuckGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D98B2CA20253CD9005BCE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33994C0872ED59413F65C7EB /* Pods-DuckDuckGoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8H2JAT7DH;
+				INFOPLIST_FILE = DuckDuckGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyan.DuckDuckGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuckDuckGo.app/DuckDuckGo";
+			};
+			name = Debug;
+		};
+		3D98B2CB20253CD9005BCE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70656701C3870561DB9EAA23 /* Pods-DuckDuckGoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8H2JAT7DH;
+				INFOPLIST_FILE = DuckDuckGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jyan.DuckDuckGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuckDuckGo.app/DuckDuckGo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D98B2A020253CD8005BCE46 /* Build configuration list for PBXProject "DuckDuckGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D98B2C420253CD9005BCE46 /* Debug */,
+				3D98B2C520253CD9005BCE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D98B2C620253CD9005BCE46 /* Build configuration list for PBXNativeTarget "DuckDuckGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D98B2C720253CD9005BCE46 /* Debug */,
+				3D98B2C820253CD9005BCE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D98B2C920253CD9005BCE46 /* Build configuration list for PBXNativeTarget "DuckDuckGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D98B2CA20253CD9005BCE46 /* Debug */,
+				3D98B2CB20253CD9005BCE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D98B29D20253CD8005BCE46 /* Project object */;
+}
