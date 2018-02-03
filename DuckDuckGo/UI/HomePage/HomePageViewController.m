@@ -9,6 +9,8 @@
 #import "HomePageViewController.h"
 #import "SearchResultTableViewCell.h"
 #import "HomePageDataProvider.h"
+#import "DetailPageViewController.h"
+#import "DDGRelatedTopic.h"
 
 @interface HomePageViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -75,6 +77,20 @@ NSInteger numberOfRows = 20;
         return numberOfRows;
     }
     return 0;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    DDGRelatedTopic *topic = self.dataProvider.relatedTopicList[indexPath.row];
+    if (topic && topic.firstURL){
+        [self gotoDetailPageWith:topic];
+    }
+}
+
+- (void)gotoDetailPageWith:(DDGRelatedTopic *)topic{
+    DetailPageViewController *viewController = [[DetailPageViewController alloc] initWithTopic:topic];
+    [self.navigationController pushViewController:viewController animated:true];
 }
 
 

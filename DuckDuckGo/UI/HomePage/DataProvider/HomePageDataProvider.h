@@ -10,7 +10,6 @@
 
 @interface HomePageDataProvider : NSObject
 
-
 @property (nonatomic,strong) NSMutableArray* relatedTopicList;
 - (void)getData:(void (^)(void))completion;
 
