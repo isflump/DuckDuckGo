@@ -21,12 +21,12 @@
 
 - (void)prepareForReuse{
     [super prepareForReuse];
-    self.resultImageView.image = nil;
+    self.resultImageView.image = [UIImage imageNamed:@"imagePlaceHolder"];
 }
 
 - (void)updateWith:(DDGRelatedTopic *)topic{
     if (topic.icon.url){
-        [self.resultImageView setImageWithURL:topic.icon.url placeholderImage:nil];
+        [self.resultImageView setImageWithURL:topic.icon.url placeholderImage:[UIImage imageNamed:@"imagePlaceHolder"]];
     }
     self.resultTitleLabel.text = topic.text;
 }
