@@ -20,6 +20,7 @@
 @implementation SearchResultTableViewCell
 
 - (void)prepareForReuse{
+    [super prepareForReuse];
     self.resultImageView.image = nil;
 }
 
