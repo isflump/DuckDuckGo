@@ -8,4 +8,4 @@
 
 ## Screenshots
 
-<img src="/ScreenShots/HomePage.png" width="250"/><img src="/ScreenShots/DetailPage.png" width="250"/>
+<img src="https://github.com/isflump/DuckDuckGo/blob/master/Screenshots/HomePage.png?raw=true" width="250"/><img src="https://github.com/isflump/DuckDuckGo/blob/master/Screenshots/DetailPage.png?raw=true" width="250"/>
